@@ -1,0 +1,13 @@
+{
+    "type": "machine_model",
+    "name": "Elegoo Orangestorm Giga",
+    "model_id": "Elegoo-Orangestorm-Giga",
+    "nozzle_diameter": "0.6",
+    "machine_tech": "FFF",
+    "family": "Elegoo",
+    "bed_model": "elegoo_orangestorm_giga_buildplate_model.stl",
+    "bed_texture": "elegoo_orangestorm_giga_buildplate_texture.png",
+    "bed_exclude_area": ["0x0"],
+    "hotend_model": "",
+	"default_materials": "Elegoo Generic PLA @0.2 nozzle;Elegoo Generic PETG @0.2 nozzle;Elegoo Generic ABS @0.2 nozzle;Elegoo Generic PLA @0.4 nozzle;Elegoo Generic PETG @0.4 nozzle;Elegoo Generic ABS @0.4 nozzle;Elegoo Generic PLA @0.6 nozzle;Elegoo Generic PETG @0.6 nozzle;Elegoo Generic ABS @0.6 nozzle;Elegoo Generic PLA @0.8 nozzle;Elegoo Generic PETG @0.8 nozzle;Elegoo Generic ABS @0.8 nozzle"
+}

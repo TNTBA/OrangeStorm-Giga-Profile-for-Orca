@@ -64,14 +64,14 @@
         "0"
     ],
     "printable_height": "1020",
-    "extruder_clearance_radius": "100",
-    "extruder_clearance_height_to_rod": "50",
-    "extruder_clearance_height_to_lid": "200",
+    "extruder_clearance_radius": "86",
+    "extruder_clearance_height_to_rod": "72",
+    "extruder_clearance_height_to_lid": "1010",
     "nozzle_diameter": [
-        "0.4"
+        "0.6"
     ],
     "printer_settings_id": "",
-    "printer_variant": "0.4",
+    "printer_variant": "0.6",
     "retraction_minimum_travel": [
         "1"
     ],
@@ -97,7 +97,7 @@
         "0"
     ],
     "retraction_speed": [
-        "35"
+        "45"
     ],
     "single_extruder_multi_material": "1",
     "change_filament_gcode": "M600",

@@ -63,26 +63,6 @@
 	],
 	"process_list": [
 		{
-			"name": "fdm_process_orangestorm_common",
-			"sub_path": "process/fdm_process_orangestorm_common.json"
-		},
-		{
-			"name": "0.20mm Standard @Elegoo Orangestorm Giga (0.4 nozzle)",
-			"sub_path": "process/0.20mm Standard @Elegoo Orangestorm Giga (0.4 nozzle).json"
-		},
-		{
-			"name": "0.20mm Standard @Elegoo Orangestorm Giga (0.6 nozzle)",
-			"sub_path": "process/0.20mm Standard @Elegoo Orangestorm Giga (0.6 nozzle).json"
-		},
-		{
-			"name": "0.20mm Standard @Elegoo Orangestorm Giga (0.8 nozzle)",
-			"sub_path": "process/0.20mm Standard @Elegoo Orangestorm Giga (0.8 nozzle).json"
-		},
-		{
-			"name": "0.20mm Standard @Elegoo Orangestorm Giga (1.0 nozzle)",
-			"sub_path": "process/0.20mm Standard @Elegoo Orangestorm Giga (1.0 nozzle).json"
-		},
-		{
 			"name": "fdm_process_common",
 			"sub_path": "process/fdm_process_common.json"
 		},
@@ -697,6 +677,10 @@
 		{
 			"name": "0.28mm Extra Draft @Elegoo Neptune4Pro (0.8 nozzle)",
 			"sub_path": "process/0.28mm Extra Draft @Elegoo Neptune4Pro (0.8 nozzle).json"
+		},
+		{	
+			"name": "0.28mm Beta Profile @Elegoo Orangestorm Giga (0.6 Nozzle)",
+			"sub_path": "process/.20mm Standard @Elegoo OrangestormGiga (0.6nozzle).json"
 		}
 	],
 	"filament_list": [
@@ -730,26 +714,6 @@
 		}
 	],
 	"machine_list": [
-		{
-			"name": "fdm_orangestorm_giga_common",
-			"sub_path": "machine/fdm_orangestorm_giga_common.json"
-		},
-		{
-			"name": "Elegoo Orangestorm Giga (0.4 nozzle)",
-			"sub_path": "machine/Elegoo Orangestorm Giga (0.4 nozzle).json"
-		},
-		{
-			"name": "Elegoo Orangestorm Giga (0.6 nozzle)",
-			"sub_path": "machine/Elegoo Orangestorm Giga (0.6 nozzle).json"
-		},
-		{
-			"name": "Elegoo Orangestorm Giga (0.8 nozzle)",
-			"sub_path": "machine/Elegoo Orangestorm Giga (0.8 nozzle).json"
-		},
-		{
-			"name": "Elegoo Orangestorm Giga (1.0 nozzle)",
-			"sub_path": "machine/Elegoo Orangestorm Giga (1.0 nozzle).json"
-		},
 		{
 			"name": "fdm_machine_common",
 			"sub_path": "machine/fdm_machine_common.json"
@@ -861,6 +825,10 @@
 		{
 			"name": "Elegoo Neptune 4 Pro (0.8 nozzle)",
 			"sub_path": "machine/Elegoo Neptune 4 Pro (0.8 nozzle).json"
+		},
+		{
+			"name": "Elegoo Orangestorm Giga (0.6 nozzle)",
+			"sub_path": "machine/Elegoo Orangestorm Giga (0.6 nozzle).json"
 		}
 	]
 }

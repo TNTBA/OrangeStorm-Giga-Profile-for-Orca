@@ -6,7 +6,6 @@ To do this, you would go to your computer's browser and enter the ip address for
 
 ex. 192.168.xxx.xxx/#
 
-
 After logging in, go to your printer's configuration tab. 
 
 Find your "printer.cfg". right click the file and rename it. You should rename to something like: "printer-elegoo.cfg". we do not want to delete this because you may want to go back to this if you dont like my printer.cfg. 
@@ -16,7 +15,61 @@ download the orca_variables.cfg from this github and upload it to fluidd.
 
 if everything is uploaded, restart klipper from the Fluid UI screen. 
 
-Now configure your orca slicer's printer profile. 
+
+ORCA SLICER PROFILE INSTRUCTIONS (DO NOT USE THIS PROFILE WITHOUT MODIFYING YOUR KLIPPER SETTINGS!)
+
+You will need the following files to make this work:
+
+Main Manufacturer Config file:
+1. orca_slicer_config\profiles\Elegoo.json
+
+On windows:You will require admin privileges in order to do this.  Go to "C:\Program Files\OrcaSlicer\resources\profiles" from windows explorer. You will see there is already an "Elegoo.json". Rename this file as "Elegoo original.json" or save it in another location on your computer in case you wish to revert back one day. Save the Elegoo.json file from this github to that location. 
+
+Build Plate SVG & STL
+1. orca_slicer_config\profiles\Elegoo\elegoo_orangestorm_giga_buildplate_model.stl
+2. orca_slicer_config\giga_plate-02.svg
+
+On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo"
+You will save the two files in this directory. You will not overwrite anything. 
+
+Save these two files in the following location: 
+C:\Program Files\OrcaSlicer\resources\profiles\Elegoo
 
 
+Process files:
+1. orca_slicer_config\profiles\Elegoo\process\fdm_process_orangestorm_common.json
+2. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (0.4 nozzle).json
+3. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (0.6 nozzle).json
+4. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (0.8 nozzle).json
+5. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (1.0 nozzle).json
+
+On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\process" and save the above github files to this location. 
+
+
+Machine Profiles:
+1. orca_slicer_config\profiles\Elegoo\machine\fdm_orangestorm_giga_common.json
+2. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (0.4 nozzle).json
+3. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (0.6 nozzle).json
+4. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (0.8 nozzle).json
+5. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (1.0 nozzle).json
+
+On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\machine" and save the above github files to this location. 
+
+Filament Profiles:
+1. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic ABS.json
+2. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic PETG.json
+3. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic PLA.json
+
+On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\filament" and save the above github files to this location. 
+You may want to save the Elegoo Generic profiles located in the folder before overwriting them with mine - its up to you. 
+
+
+With those files in their appropriate directories, close Orcaslicer. Then go you will then need to go to "C:\Users\YOUR_USER_NAME\AppData\Roaming\OrcaSlicer\system" and delete the "C:\Users\YOUR_USER_NAME\AppData\Roaming\OrcaSlicer\system\Elegoo.json" file in that location. 
+
+Try loading up Orca Slicer and go to printer selection, search for Elegoo, scroll toward the bottom to see Orangestorm Giga and the 4 nozzle profiles. Select whichever one you intend on using and enjoy!
+
+If this does not work, close Orca Slicer and go back to "C:\Users\YOUR_USER_NAME\AppData\Roaming\OrcaSlicer\system" and delete:
+Elegoo.json & the entire Elegoo directory.
+
+**Please note that by deleting the Elegoo directory, you may lose custom print profiles you have created with your other elegoo machines. I have not tested this to see whether that would be the case since the Orangestorm Giga is my first Elegoo printer.** 
 

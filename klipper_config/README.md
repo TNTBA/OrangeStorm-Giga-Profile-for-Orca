@@ -17,9 +17,10 @@ Follow me for other 3D printer related stuff www.tntba.com
   
 I've placed the macros you will need to overwrite or copy and paste in your printer.cfg. You can keep old macros in the same file if you want by including a semicolon ";" before each line of code - which you will see in my printer.cfg
 
-
+```
 [include orca_variables.cfg]
-
+```
+```
 [gcode_macro RESUME]
 rename_existing: BASE_RESUME
 variable_flag_print_status: 1
@@ -72,8 +73,8 @@ gcode:
     {% else %}
     M400
     {% endif %}
-
-
+```
+```
 [gcode_macro PRINT_START]         
 gcode:
     SET_GCODE_VARIABLE MACRO=RESUME VARIABLE=flag_print_status VALUE="{0}"
@@ -88,9 +89,9 @@ gcode:
     CLEAR_PAUSE
     # C1  
     M117 Printing
+```
 
-
-
+```
 [gcode_macro PRINT_END]
 gcode:
     SAVE_VARIABLE VARIABLE=was_interrupted VALUE=False
@@ -132,8 +133,8 @@ gcode:
     M84 X Y E ;Disable all steppers but Z
     M107
     M84
-
-
+```
+```
 [gcode_macro CANCEL_PRINT]
 rename_existing: BASE_CANCEL_PRINT
 variable_flag_home_x: 0
@@ -187,9 +188,9 @@ gcode:
     G90
     M82
     M84
+```
 
-
-
+```
 [gcode_macro PAUSE]
 rename_existing: BASE_PAUSE
 variable_flag_print_status: 1
@@ -237,9 +238,9 @@ gcode:
         M400
       {% endif %}
     {% endif %}
+```
 
-
-
+```
 [gcode_macro M140]
 rename_existing: M140.6245197
 gcode:
@@ -266,8 +267,8 @@ gcode:
             SET_HEATER_TEMPERATURE HEATER=heater_bed3 TARGET={temp} ; Heatbed 3 (Top Left)
         {% endif %}
     {% endif %}
-
-
+```
+```
 [gcode_macro M190]
 rename_existing: M190.6245197
 gcode:
@@ -294,3 +295,4 @@ gcode:
             TEMPERATURE_WAIT SENSOR="heater_generic heater_bed3" MINIMUM={temp-2} MAXIMUM={temp+2} ; Wait for Heatbed 3
         {% endif %}
     {% endif %}
+```

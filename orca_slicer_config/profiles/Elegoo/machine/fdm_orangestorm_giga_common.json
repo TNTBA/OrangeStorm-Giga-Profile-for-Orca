@@ -4,6 +4,7 @@
     "from": "system",
     "instantiation": "false",
     "printer_technology": "FFF",
+    "printer_structure": "hbot",
     "deretraction_speed": [
         "40"
     ],
@@ -46,16 +47,16 @@
         "10"
     ],
     "machine_max_jerk_e": [
-        "5"
+        "3"
     ],
     "machine_max_jerk_x": [
-        "8"
+        "9"
     ],
     "machine_max_jerk_y": [
-        "8"
+        "9"
     ],
     "machine_max_jerk_z": [
-        "0.4"
+        "3"
     ],
     "machine_min_extruding_rate": [
         "0"

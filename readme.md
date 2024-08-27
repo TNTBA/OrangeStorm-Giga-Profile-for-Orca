@@ -62,6 +62,7 @@ On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\machine
 
 
 **Windows**
+
 On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\filament" and save the above github files to this location. 
 You may want to save the Elegoo Generic profiles located in the folder before overwriting them with mine - its up to you. 
 
@@ -74,6 +75,7 @@ If this does not work, close Orca Slicer and go back to "C:\Users\YOUR_USER_NAME
 Elegoo.json & the entire Elegoo directory.
 
 **Mac OSX**
+
 On Mac, open a Finder window and navigation to Applications. Right click on OrcaSlicer and click on Show Package Contents. You will be presented with Contents, double click on that folder, then double click on Resources, then double click on profiles. From here you can save the above files. Your 'orca_slicer_config' path should be this be default: "/Applications/OrcaSlicer.app/Contents/Resources/".
 
 Relaunch, if OrcaSlicer is open, otherwise open OrcaSlicer and you will now have the Orangestorm Giga profiles. 

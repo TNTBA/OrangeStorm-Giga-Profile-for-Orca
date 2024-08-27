@@ -1,33 +1,21 @@
-WHY DID I DO THIS???
-# Orca does not have any available configurations that enables the use of multiple heatbeds.
-# If it does, then i'm an idiot. If I'm right, then what this code will do is figure out where
-# the models were placed on your slicer and send that information to klipper to figure out which
-# heatbeds to turn on and off. 
-#                                                          
+# WHY DID I DO THIS???
+Orca does not have any available configurations that enables the use of multiple heatbeds. If it does, then i'm an idiot. If I'm right, then what this code will do is figure out where the models were placed on your slicer and send that information to klipper to figure out which heatbeds to turn on and off. 
+                                                        
 # Updated Macros:
-# 1. M140 - Now handles multiple heatbeds. If a T# parameter is provided, it controls
-#    the specified bed heater. Otherwise, it uses min/max coordinates to determine 
-#    which beds to heat.
-# 2. M190 - Updated to correctly reference sensors for each heater bed and wait 
-#    appropriately based on bed coordinates or the T# parameter.
-# 3. PRINT_END - Enhanced to perform comprehensive shutdown procedures, including clearing 
-#    min/max XYZ variables, turning off all heaters, fans, and steppers.
-# 4. PAUSE - Modified to save the current print state, including extruder position and 
-#    temperatures, to enable proper resumption.
-# 5. RESUME - Updated to restore the printer state after a pause, including extruder 
-#    and bed temperatures.
-# 6. CANCEL_PRINT - Improved to clear the print state, stop all movements, and turn off 
-#    heaters, fans, and steppers as necessary.
+1. M140 - Now handles multiple heatbeds. If a T# parameter is provided, it controls the specified bed heater. Otherwise, it uses min/max coordinates to determine which beds to heat.
+2. M190 - Updated to correctly reference sensors for each heater bed and wait appropriately based on bed coordinates or the T# parameter.
+3. PRINT_END - Enhanced to perform comprehensive shutdown procedures, including clearing min/max XYZ variables, turning off all heaters, fans, and steppers.
+4. PAUSE - Modified to save the current print state, including extruder position and temperatures, to enable proper resumption.
+5. RESUME - Updated to restore the printer state after a pause, including extruder and bed temperatures.
+6. CANCEL_PRINT - Improved to clear the print state, stop all movements, and turn off heaters, fans, and steppers as necessary.
 
 # Notes:
-# - Make sure to include the orca_variables.cfg file as it contains the necessary 
-#   variable definitions for the M140, M190, and PRINT_END macros.
-#
-# It took a lot of time and patience to get this working thanks to ChatGPT.
-# Follow me for other 3D printer related stuff www.tntba.com
-# TryNotToBreakAnything     
+- Make sure to include the orca_variables.cfg file as it contains the necessary variable definitions for the M140, M190, and PRINT_END macros. It took a lot of time and patience to get this working thanks to ChatGPT.
 
-# I've placed the macros you will need to overwrite or copy and paste in your printer.cfg. You can keep old macros in the same file if you want by including a semicolon ";" before each line of code - which you will see in my printer.cfg
+Follow me for other 3D printer related stuff www.tntba.com
+- TryNotToBreakAnything
+  
+I've placed the macros you will need to overwrite or copy and paste in your printer.cfg. You can keep old macros in the same file if you want by including a semicolon ";" before each line of code - which you will see in my printer.cfg
 
 
 [include orca_variables.cfg]

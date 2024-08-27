@@ -1,4 +1,4 @@
-NOTE: This is only for Elegoo Printers who are using a single hotend. If you are using more than one hotend, do not use this configuration. 
+**NOTE: This is only for Elegoo Printers who are using a single hotend. If you are using more than one hotend, do not use this configuration.** 
 
 Enter into Fluidd (the UI for your printer/klipper) so you can access klipper and your config files. 
 
@@ -16,18 +16,18 @@ download the orca_variables.cfg from this github and upload it to fluidd.
 if everything is uploaded, restart klipper from the Fluid UI screen. 
 
 
-ORCA SLICER PROFILE INSTRUCTIONS (DO NOT USE THIS PROFILE WITHOUT MODIFYING YOUR KLIPPER SETTINGS!)
+**ORCA SLICER PROFILE INSTRUCTIONS (DO NOT USE THIS PROFILE WITHOUT MODIFYING YOUR KLIPPER SETTINGS!)**
 
 You will need the following files to make this work:
 
-Main Manufacturer Config file:
-1. orca_slicer_config\profiles\Elegoo.json
+**Main Manufacturer Config file:**
+1. orca_slicer_config\profiles\**Elegoo.json**
 
 On windows:You will require admin privileges in order to do this.  Go to "C:\Program Files\OrcaSlicer\resources\profiles" from windows explorer. You will see there is already an "Elegoo.json". Rename this file as "Elegoo original.json" or save it in another location on your computer in case you wish to revert back one day. Save the Elegoo.json file from this github to that location. 
 
-Build Plate SVG & STL
-1. orca_slicer_config\profiles\Elegoo\elegoo_orangestorm_giga_buildplate_model.stl
-2. orca_slicer_config\giga_plate-02.svg
+**Build Plate SVG & STL**
+1. orca_slicer_config\profiles\Elegoo\**elegoo_orangestorm_giga_buildplate_model.stl**
+2. orca_slicer_config\**giga_plate-02.svg**
 
 On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo"
 You will save the two files in this directory. You will not overwrite anything. 
@@ -36,29 +36,29 @@ Save these two files in the following location:
 C:\Program Files\OrcaSlicer\resources\profiles\Elegoo
 
 
-Process files:
-1. orca_slicer_config\profiles\Elegoo\process\fdm_process_orangestorm_common.json
-2. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (0.4 nozzle).json
-3. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (0.6 nozzle).json
-4. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (0.8 nozzle).json
-5. orca_slicer_config\profiles\Elegoo\process\0.20mm Standard @Elegoo Orangestorm Giga (1.0 nozzle).json
+**Process files:**
+1. orca_slicer_config\profiles\Elegoo\process\**fdm_process_orangestorm_common.json**
+2. orca_slicer_config\profiles\Elegoo\process\**0.20mm Standard @Elegoo Orangestorm Giga (0.4 nozzle).json**
+3. orca_slicer_config\profiles\Elegoo\process\**0.20mm Standard @Elegoo Orangestorm Giga (0.6 nozzle).json**
+4. orca_slicer_config\profiles\Elegoo\process\**0.20mm Standard @Elegoo Orangestorm Giga (0.8 nozzle).json**
+5. orca_slicer_config\profiles\Elegoo\process\**0.20mm Standard @Elegoo Orangestorm Giga (1.0 nozzle).json**
 
 On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\process" and save the above github files to this location. 
 
 
-Machine Profiles:
-1. orca_slicer_config\profiles\Elegoo\machine\fdm_orangestorm_giga_common.json
-2. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (0.4 nozzle).json
-3. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (0.6 nozzle).json
-4. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (0.8 nozzle).json
-5. orca_slicer_config\profiles\Elegoo\machine\Elegoo Orangestorm Giga (1.0 nozzle).json
+**Machine Profiles:**
+1. orca_slicer_config\profiles\Elegoo\machine\**fdm_orangestorm_giga_common.json**
+2. orca_slicer_config\profiles\Elegoo\machine\**Elegoo Orangestorm Giga (0.4 nozzle).json**
+3. orca_slicer_config\profiles\Elegoo\machine\**Elegoo Orangestorm Giga (0.6 nozzle).json**
+4. orca_slicer_config\profiles\Elegoo\machine\**Elegoo Orangestorm Giga (0.8 nozzle).json**
+5. orca_slicer_config\profiles\Elegoo\machine\**Elegoo Orangestorm Giga (1.0 nozzle).json**
 
 On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\machine" and save the above github files to this location. 
 
-Filament Profiles:
-1. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic ABS.json
-2. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic PETG.json
-3. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic PLA.json
+**Filament Profiles:**
+1. orca_slicer_config\profiles\Elegoo\filament\**Elegoo Generic ABS.json**
+2. orca_slicer_config\profiles\Elegoo\filament\**Elegoo Generic PETG.json**
+3. orca_slicer_config\profiles\Elegoo\filament\**Elegoo Generic PLA.json**
 
 On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\filament" and save the above github files to this location. 
 You may want to save the Elegoo Generic profiles located in the folder before overwriting them with mine - its up to you. 

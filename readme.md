@@ -60,6 +60,8 @@ On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\machine
 2. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic PETG.json
 3. orca_slicer_config\profiles\Elegoo\filament\Elegoo Generic PLA.json
 
+
+**Windows**
 On Windows: Go to "C:\Program Files\OrcaSlicer\resources\profiles\Elegoo\filament" and save the above github files to this location. 
 You may want to save the Elegoo Generic profiles located in the folder before overwriting them with mine - its up to you. 
 
@@ -71,5 +73,11 @@ Try loading up Orca Slicer and go to printer selection, search for Elegoo, scrol
 If this does not work, close Orca Slicer and go back to "C:\Users\YOUR_USER_NAME\AppData\Roaming\OrcaSlicer\system" and delete:
 Elegoo.json & the entire Elegoo directory.
 
+**Mac OSX**
+On Mac, open a Finder window and navigation to Applications. Right click on OrcaSlicer and click on Show Package Contents. You will be presented with Contents, double click on that folder, then double click on Resources, then double click on profiles. From here you can save the above files. Your 'orca_slicer_config' path should be this be default: "/Applications/OrcaSlicer.app/Contents/Resources/".
+
+Relaunch, if OrcaSlicer is open, otherwise open OrcaSlicer and you will now have the Orangestorm Giga profiles. 
+
 **Please note that by deleting the Elegoo directory, you may lose custom print profiles you have created with your other elegoo machines. I have not tested this to see whether that would be the case since the Orangestorm Giga is my first Elegoo printer.** 
+
 

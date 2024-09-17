@@ -1,6 +1,9 @@
 # System profile for Orca Slicer
 ![orca-screenshot](https://github.com/user-attachments/assets/c6cfe1cd-7b1f-45fe-b8c2-be0092766612)
 
+
+# 9/17/2024 - I have decided to stop working on this project. Elegoo has a fork of Orcaslicer which has print profiles which are much better than what you'll find here. Check it out: https://github.com/ELEGOOTechSupport/ElegooSlicer  Read more here: https://tntba.com/giga-tap-orangestorm-giga-probe-mod/
+
 **Currently this profile works ONLY after making changes to your printer.cfg file in klipper.**
 **This is only for Elegoo Printers who are using a single hotend. If you are using more than one hotend (IDEX configuration), do not use this configuration.** 
 
